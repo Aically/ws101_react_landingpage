@@ -1,0 +1,73 @@
+#hero {
+    background-image: url('./images/1.avif'); 
+    background-size: cover; 
+    background-position: center; 
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite, neonGlow 1.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722, 0 0 20px #ff5722, 0 0 25px #ff5722, 0 0 30px #ff5722; }
+    50% { text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722, 0 0 50px #ff5722, 0 0 60px #ff5722; }
+    100% { text-shadow: 0 0 5px #ff5722, 0 0 10px #ff5722, 0 0 15px #ff5722, 0 0 20px #ff5722, 0 0 25px #ff5722, 0 0 30px #ff5722; }
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeInText 2s ease-in-out;
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-content button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #e64a19;
+    transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

@@ -1,0 +1,60 @@
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#footer p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .nav-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        width: calc(100% - 90px);
+    }
+
+    .search-bar button {
+        width: 80px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin: 20px 0;
+        width: 80%;
+    }
+
+    .courses-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-item {
+        width: 80%;
+    }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
